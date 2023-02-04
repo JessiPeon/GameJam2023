@@ -29,6 +29,11 @@ public class SaveTime : MonoBehaviour
         Debug.Log(numCircle.ToString() + " " + audioSource.timeSamples.ToString());
     }
 
+    public void load(int number)
+    {
+        LoadToJson();
+    }
+
     public void SaveToJson()
     {
         Record record = new Record();
@@ -37,6 +42,16 @@ public class SaveTime : MonoBehaviour
 
         string json = JsonUtility.ToJson(record, true);
         File.WriteAllText(Application.dataPath + "/records.json", json);
+    }
+    public void LoadToJson()
+    {
+        string json = File.ReadAllText(Application.dataPath + "/records.json");
+        Record record = JsonUtility.FromJson<Record>(json);
+
+        numCircle = record.numCircle;
+        sample =record.sample;
+
+
     }
 
 }

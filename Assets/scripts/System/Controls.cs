@@ -61,4 +61,45 @@ public class Controls : MonoBehaviour
             circle4.color = Color.yellow;
         }
     }
+    public void IluminaCirculo(int circle)
+    {
+        if (circle == 1)
+        {
+            circle1.color = Color.white;
+        }
+        if (circle == 2)
+        {
+            circle2.color = Color.white;
+        }
+        if (circle == 3)
+        {
+            circle3.color = Color.white;
+        }
+        if (circle == 4)
+        {
+            circle4.color = Color.white;
+        }
+        StartCoroutine(restartColor(circle));
+    }
+
+    IEnumerator restartColor(int circle)
+    {
+        yield return new WaitForSeconds(.1f);
+        if (circle == 1)
+        {
+            circle1.color = Color.red;
+        }
+        if (circle == 2)
+        {
+            circle2.color = Color.blue;
+        }
+        if (circle == 3)
+        {
+            circle3.color = Color.green;
+        }
+        if (circle == 4)
+        {
+            circle4.color = Color.yellow;
+        }
+    }
 }
