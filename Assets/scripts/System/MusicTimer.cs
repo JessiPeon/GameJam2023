@@ -9,10 +9,13 @@ public class MusicTimer : MonoBehaviour
     public float contadorSamples = 0;
     public TextMeshProUGUI textoPruebaTime;
     public TextMeshProUGUI textoPruebaSamples;
+    public TextMeshProUGUI textoPruebaSampleRate;
     public TextMeshProUGUI textoPruebaNombre;
 
     public AudioSource audioSource;
     public AudioClip Musica;
+
+    public float sapmleRate;
 
     // Start is called before the first frame update
     void Start()
@@ -31,12 +34,15 @@ public class MusicTimer : MonoBehaviour
     {
         contador = audioSource.time;
         contadorSamples = audioSource.timeSamples;
+        sapmleRate = contadorSamples / contador; //Musica.length;
+
     }
 
     public void mostrar()
     {
         textoPruebaTime.text = Mathf.Floor(contador / 60).ToString("00") + ":" + Mathf.Floor(contador % 60).ToString("00");
         textoPruebaSamples.text = Mathf.Floor(contador).ToString();
+        textoPruebaSampleRate.text = (sapmleRate).ToString();
     }
 
 }
