@@ -6,8 +6,12 @@ public class Sistema : MonoBehaviour
 {
     public static Sistema data;
 
-    public BotonesPool botonesPool = null;
+    public PoolBichos poolBichos = null;
     public MusicTimer musicTimer = null;
+
+
+    public LoadSongs loadSongs = null;
+    public LoadSongData loadSongData = null;
 
 
     // Start is called before the first frame update
