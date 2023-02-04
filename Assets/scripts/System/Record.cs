@@ -7,4 +7,5 @@ public class Record
 {
     public List<int> numCircle;
     public List<long> sample;
+    public int level;
 }

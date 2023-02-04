@@ -9,6 +9,7 @@ public class SaveTime : MonoBehaviour
 
     public List<int> numCircle = new List<int>();
     public List<long> sample = new List<long>();
+    public int level = 1;
     [SerializeField] private AudioSource audioSource;
 
     private void OnEnable()
@@ -50,7 +51,7 @@ public class SaveTime : MonoBehaviour
 
         numCircle = record.numCircle;
         sample =record.sample;
-
+        level = record.level;
 
     }
 

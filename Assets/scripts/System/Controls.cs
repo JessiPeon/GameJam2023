@@ -13,71 +13,63 @@ public class Controls : MonoBehaviour
 
     public static event Action<int> saveTime;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            circle1.color = Color.white;
-            saveTime?.Invoke(1);
-        }
-        if (Input.GetKeyUp(KeyCode.Z))
+        //if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetButton("Circle1"))
         {
             circle1.color = Color.red;
+            //saveTime?.Invoke(1);
         }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            circle2.color = Color.white;
-            saveTime?.Invoke(2);
-        }
-        if (Input.GetKeyUp(KeyCode.X))
+        if (Input.GetButton("Circle2"))
         {
             circle2.color = Color.blue;
+            //saveTime?.Invoke(2);
         }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            circle3.color = Color.white;
-            saveTime?.Invoke(3);
-        }
-        if (Input.GetKeyUp(KeyCode.C))
+        if (Input.GetButton("Circle3"))
         {
             circle3.color = Color.green;
+            //saveTime?.Invoke(3);
         }
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            circle4.color = Color.white;
-            saveTime?.Invoke(4);
-        }
-        if (Input.GetKeyUp(KeyCode.V))
+        if (Input.GetButton("Circle4"))
         {
             circle4.color = Color.yellow;
+            //saveTime?.Invoke(4);
+        }
+        if (Input.GetButtonUp("Circle1"))
+        {
+            circle1.color = Color.white;
+        }
+        if (Input.GetButtonUp("Circle2"))
+        {
+            circle2.color = Color.white;
+        }
+        if (Input.GetButtonUp("Circle3"))
+        {
+            circle3.color = Color.white;
+        }
+        if (Input.GetButtonUp("Circle4"))
+        {
+            circle4.color = Color.white;
         }
     }
     public void IluminaCirculo(int circle)
     {
         if (circle == 1)
         {
-            circle1.color = Color.white;
+            circle1.color = Color.red;
         }
         if (circle == 2)
         {
-            circle2.color = Color.white;
+            circle2.color = Color.blue;
         }
         if (circle == 3)
         {
-            circle3.color = Color.white;
+            circle3.color = Color.green;
         }
         if (circle == 4)
         {
-            circle4.color = Color.white;
+            circle4.color = Color.yellow;
         }
         StartCoroutine(restartColor(circle));
     }
@@ -87,19 +79,19 @@ public class Controls : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         if (circle == 1)
         {
-            circle1.color = Color.red;
+            circle1.color = Color.white;
         }
         if (circle == 2)
         {
-            circle2.color = Color.blue;
+            circle2.color = Color.white;
         }
         if (circle == 3)
         {
-            circle3.color = Color.green;
+            circle3.color = Color.white;
         }
         if (circle == 4)
         {
-            circle4.color = Color.yellow;
+            circle4.color = Color.white;
         }
     }
 }
