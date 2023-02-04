@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class RenderSong : MonoBehaviour
@@ -16,6 +17,18 @@ public class RenderSong : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(Sistema.data.renderSong == null)
+        {
+            Sistema.data.renderSong = this;
+        }
+        else
+        {
+            if (Sistema.data.renderSong != this)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+        
         List<int> listaCircle1 = new List<int>();
         List<int> listaCircle2 = new List<int>();
         List<int> listaCircle3 = new List<int>();
@@ -80,5 +93,80 @@ public class RenderSong : MonoBehaviour
                 indices[i]++;
             }
         }
+    }
+
+    [Space(20f)]
+    //public int samplePerfect = 2300;
+    //public int sampleGood = 4500;
+    //public int sampleOk = 5200;
+    //public int sampleBad = 6000;
+
+    public int samplePerfect = 2300;
+    public int sampleGood = 4500;
+    public int sampleOk = 5200;
+    public int sampleBad = 6000;
+
+    public bool CheckButtonPress(int indice, int sapmleToFind)
+    {
+        int? hitPlus = null;
+        int? hitMinus = null;
+        int i = 0;
+        var circle = listaCircles[indice];
+        for (; i < circle.Length; i++)
+        {
+            int item = circle[i];
+            if (item >= sapmleToFind)
+            {
+                hitPlus = item;
+                break;
+            }
+        }
+        if (i != 0)
+        {
+            hitMinus = circle[i - 1];
+        }
+        var minusResult = CalculateHit(sapmleToFind, hitMinus);
+        if (minusResult)
+        {
+            Sistema.data.poolBichos.destoryBicho(indice, hitMinus.GetValueOrDefault());
+            return true;
+        }
+        var plusResult = CalculateHit(sapmleToFind, hitPlus);
+        if (plusResult)
+        {
+            Sistema.data.poolBichos.destoryBicho(indice, hitPlus.GetValueOrDefault());
+            return true;
+        }
+        return false;
+    }
+
+    private bool CalculateHit(int sapmleToFind, int? hitMinus)
+    {
+        var difference = Mathf.Abs(sapmleToFind - hitMinus.GetValueOrDefault());
+        if (hitMinus is null || difference > sampleBad)
+        {
+            return false;
+        }
+        if (difference <= samplePerfect)
+        {
+            Debug.Log("Perfect");
+            //llamar perfect
+            return true;
+        }
+        if (difference <= sampleGood)
+        {
+            Debug.Log("Good");
+            //llamar good
+            return true;
+        }
+        if (difference <= sampleOk)
+        {
+            Debug.Log("OK");
+            //llamar ok
+            return true;
+        }
+        //llamar bad
+        Debug.Log("Bad");
+        return true;
     }
 }

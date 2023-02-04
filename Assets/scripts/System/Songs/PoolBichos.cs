@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ public class PoolBichos : MonoBehaviour
     public GameObject bichoAinstanciar;
 
     public GameObject[] posicionCircle;
+
+    public Dictionary<(int, int), GameObject> bichos = new Dictionary<(int, int), GameObject>();
 
     private void Awake()
     {
@@ -37,5 +40,19 @@ public class PoolBichos : MonoBehaviour
         Bicho bichonuevoScriptBicho = bichoNuvo.GetComponent<Bicho>();
         bichonuevoScriptBicho.circle = index;
         bichonuevoScriptBicho.bichoMovimiento.sampleRateToHit = sample;
+        bichos.Add((index, sample), bichoNuvo);
+    }
+
+    public void destoryBicho(int index, int sample)
+    {
+        Debug.LogWarning("destroy");
+        var tuple = (index, sample);
+        bichos.TryGetValue(tuple, out GameObject bicho);
+        if (bicho != null)
+        {
+            Debug.LogWarning("destuirdo");
+            bichos.Remove(tuple);
+            Destroy(bicho);
+        }
     }
 }

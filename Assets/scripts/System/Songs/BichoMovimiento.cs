@@ -31,8 +31,8 @@ public class BichoMovimiento : MonoBehaviour
         bicho = this.gameObject.GetComponent<Bicho>();
         bicho.DejarLibre();
         coordenadasInicio = Sistema.data.poolBichos.posicionCircle[bicho.circle].transform.position;
-        Debug.Log("Sample Rate on spawn " + Sistema.data.musicTimer.Samples);
-        Debug.Log("yo deberia haber spawneado en  " + (sampleRateToHit - Sistema.data.musicTimer.samplesToSpawn));
+        //Debug.Log("Sample Rate on spawn " + Sistema.data.musicTimer.Samples);
+        //Debug.Log("yo deberia haber spawneado en  " + (sampleRateToHit - Sistema.data.musicTimer.samplesToSpawn));
     }
 
     // Start is called before the first frame update
@@ -69,17 +69,17 @@ public class BichoMovimiento : MonoBehaviour
                 }
                 else if (porcentaje < 1.5f)
                 {
-                    Debug.Log("me destruy en " + Sistema.data.musicTimer.Samples);
-                    Debug.Log("yo deberia haberme destruido en " + sampleRateToHit);
-                    Debug.Log("falle " + (Sistema.data.musicTimer.Samples - sampleRateToHit));
+                    //Debug.Log("me destruy en " + Sistema.data.musicTimer.Samples);
+                    //Debug.Log("yo deberia haberme destruido en " + sampleRateToHit);
+                    //Debug.Log("falle " + (Sistema.data.musicTimer.Samples - sampleRateToHit));
                     
                     CalcularMovimiento();
-                    //MoverBicho(gameObject);
+                    MoverBicho(gameObject);
                 }
                 else
                 {
-
-                    //Destroy(this.gameObject);
+                    Debug.Log("Miss");
+                    Destroy(this.gameObject);
                 }
             
             }

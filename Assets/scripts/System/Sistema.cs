@@ -13,6 +13,8 @@ public class Sistema : MonoBehaviour
     public LoadSongs loadSongs = null;
     public LoadSongData loadSongData = null;
 
+    public RenderSong renderSong = null;
+
 
     // Start is called before the first frame update
     void Awake()
