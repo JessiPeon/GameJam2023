@@ -1176,6 +1176,7 @@ MonoBehaviour:
   musicTimer: {fileID: 0}
   loadSongs: {fileID: 0}
   loadSongData: {fileID: 0}
+  renderSong: {fileID: 0}
 --- !u!4 &1152803772
 Transform:
   m_ObjectHideFlags: 0
@@ -1284,6 +1285,10 @@ MonoBehaviour:
   circle3: 
   circle4: 
   indices: 
+  samplePerfect: 2300
+  sampleGood: 6800
+  sampleOk: 12000
+  sampleBad: 18000
 --- !u!114 &1152803778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,6 +1305,18 @@ MonoBehaviour:
   circle2: {fileID: 1713723341}
   circle3: {fileID: 2081203039}
   circle4: {fileID: 317278586}
+  axisCircle1: Circle1
+  axisCircle2: Circle2
+  axisCircle3: Circle3
+  axisCircle4: Circle4
+  butonCircle1Pressed: 0
+  butonCircle2Pressed: 0
+  butonCircle3Pressed: 0
+  butonCircle4Pressed: 0
+  butonCircle1PressedEnd: 0
+  butonCircle2PressedEnd: 0
+  butonCircle3PressedEnd: 0
+  butonCircle4PressedEnd: 0
 --- !u!1 &1160716882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,36 +1801,13 @@ GameObject:
   - component: {fileID: 1299374609}
   - component: {fileID: 1299374608}
   - component: {fileID: 1299374607}
-  - component: {fileID: 1299374606}
   m_Layer: 0
   m_Name: Bicho(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1299374606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299374605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a301a49f1758a8949ac015223a1526f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sampleRateToHit: 112895
-  coordenadasInicio: {x: 26.12, y: -1.76, z: 13.4}
-  coordenadasHit: {x: -15, y: -1.76, z: 13.4}
-  coordenadasFinal: {x: -56.120003, y: -1.76, z: 13.4}
-  coordenadasActuales: {x: -36.163284, y: -1.76, z: 13.4}
-  spawned: 1
-  enUso: 1
-  distancia: 41.120003
-  porcentaje: 1.5146712
-  samplesMoviodos: 66797
+  m_IsActive: 0
 --- !u!114 &1299374607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1827,7 +1821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: Pedro
-  bichoMovimiento: {fileID: 1299374606}
+  bichoMovimiento: {fileID: 0}
   circle: 2
 --- !u!65 &1299374608
 BoxCollider:
@@ -2195,36 +2189,13 @@ GameObject:
   - component: {fileID: 1467029168}
   - component: {fileID: 1467029167}
   - component: {fileID: 1467029166}
-  - component: {fileID: 1467029165}
   m_Layer: 0
   m_Name: Bicho(Clone) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1467029165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467029164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a301a49f1758a8949ac015223a1526f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sampleRateToHit: 249311
-  coordenadasInicio: {x: 26.12, y: 10.41, z: 13.4}
-  coordenadasHit: {x: -15, y: 10.41, z: 13.4}
-  coordenadasFinal: {x: -56.120003, y: 10.41, z: 13.4}
-  coordenadasActuales: {x: -19.496164, y: 10.41, z: 13.4}
-  spawned: 1
-  enUso: 1
-  distancia: 41.120003
-  porcentaje: 1.1093425
-  samplesMoviodos: 48922
+  m_IsActive: 0
 --- !u!114 &1467029166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,7 +2209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: Pedro
-  bichoMovimiento: {fileID: 1467029165}
+  bichoMovimiento: {fileID: 0}
   circle: 0
 --- !u!65 &1467029167
 BoxCollider:
@@ -2732,36 +2703,13 @@ GameObject:
   - component: {fileID: 1825035328}
   - component: {fileID: 1825035327}
   - component: {fileID: 1825035326}
-  - component: {fileID: 1825035325}
   m_Layer: 0
   m_Name: Bicho(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1825035325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825035324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a301a49f1758a8949ac015223a1526f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sampleRateToHit: 220147
-  coordenadasInicio: {x: 26.12, y: -8.67, z: 13.4}
-  coordenadasHit: {x: -15, y: -8.67, z: 13.4}
-  coordenadasFinal: {x: -56.120003, y: -8.67, z: 13.4}
-  coordenadasActuales: {x: -36.162354, y: -8.67, z: 13.4}
-  spawned: 1
-  enUso: 1
-  distancia: 41.120003
-  porcentaje: 1.5146486
-  samplesMoviodos: 66796
+  m_IsActive: 0
 --- !u!114 &1825035326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2775,7 +2723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: Pedro
-  bichoMovimiento: {fileID: 1825035325}
+  bichoMovimiento: {fileID: 0}
   circle: 3
 --- !u!65 &1825035327
 BoxCollider:
@@ -2876,36 +2824,13 @@ GameObject:
   - component: {fileID: 1901045932}
   - component: {fileID: 1901045931}
   - component: {fileID: 1901045930}
-  - component: {fileID: 1901045929}
   m_Layer: 0
   m_Name: Bicho(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1901045929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901045928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a301a49f1758a8949ac015223a1526f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sampleRateToHit: 167462
-  coordenadasInicio: {x: 26.12, y: 4.69, z: 13.4}
-  coordenadasHit: {x: -15, y: 4.69, z: 13.4}
-  coordenadasFinal: {x: -56.120003, y: 4.69, z: 13.4}
-  coordenadasActuales: {x: -36.163284, y: 4.69, z: 13.4}
-  spawned: 1
-  enUso: 1
-  distancia: 41.120003
-  porcentaje: 1.5146712
-  samplesMoviodos: 66797
+  m_IsActive: 0
 --- !u!114 &1901045930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2919,7 +2844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: Pedro
-  bichoMovimiento: {fileID: 1901045929}
+  bichoMovimiento: {fileID: 0}
   circle: 1
 --- !u!65 &1901045931
 BoxCollider:
