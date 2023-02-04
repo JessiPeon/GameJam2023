@@ -50,8 +50,17 @@ public class LoadSongs : MonoBehaviour
 
     public void LoadToJson()
     {
-        string json = File.ReadAllText(Application.dataPath + "\\" + folderOfSongs + "\\" + folderOfSongsJson);
-        songJSONData songRecord = JsonUtility.FromJson<songJSONData>(json);
+        //TextAsset txtAsset = Resources.Load("Levels/Level_1") as TextAsset;
+        //string parseThis = txtAsset.text;
+
+        //found in: Assets/Resources/Levels/Level_1.json
+        string concat = folderOfSongs + "\\" + folderOfSongsJson;
+        TextAsset txtAsset = Resources.Load(concat) as TextAsset;
+        string parseThis = txtAsset.text;
+
+        //string json = File.ReadAllText(Application.dataPath + "\\" + folderOfSongs + "\\" + folderOfSongsJson);
+        //songJSONData songRecord = JsonUtility.FromJson<songJSONData>(json);
+        songJSONData songRecord = JsonUtility.FromJson<songJSONData>(parseThis);
 
         songsArray = songRecord.songs;
 
@@ -69,10 +78,14 @@ public class LoadSongs : MonoBehaviour
 
         for (int i = 0; i < songsArray.Length; i++)
         {
-            string json = File.ReadAllText(Application.dataPath + "\\" + folderOfSongs + "\\" + songsArray[i] + "\\" + songDataJsonName);
-            //Debug.Log(json);
-            SongData songDataRecord = JsonUtility.FromJson<SongData>(json);
-            //Debug.Log(JsonUtility.ToJson(songDataRecord));
+            string concat = folderOfSongs + "\\" + songsArray[i] + "\\" + songDataJsonName;
+            TextAsset txtAsset = Resources.Load(concat) as TextAsset;
+            string parseThis2 = txtAsset.text;
+
+            //string json = File.ReadAllText(Application.dataPath + "\\" + folderOfSongs + "\\" + songsArray[i] + "\\" + songDataJsonName);
+            
+            SongData songDataRecord = JsonUtility.FromJson<SongData>(parseThis2);
+            
             songDataList.Add(songDataRecord);
         }
 
@@ -102,8 +115,13 @@ public class LoadSongs : MonoBehaviour
 
             for (int j = 0; j < ListOfSongData[i].dificulty.Length; j++)
             {
-                string json = File.ReadAllText(Application.dataPath + "\\" + folderOfSongs + "\\" + songsArray[i] + "\\" + ListOfSongData[i].dificulty[j] + ".json");
-                Dificulty songDatadificultyRecord = JsonUtility.FromJson<Dificulty>(json);
+
+                string concat = folderOfSongs + "\\" + songsArray[i] + "\\" + ListOfSongData[i].dificulty[j];
+                TextAsset txtAsset = Resources.Load(concat) as TextAsset;
+                string parseThis3 = txtAsset.text;
+
+                //string json = File.ReadAllText(Application.dataPath + "\\" + folderOfSongs + "\\" + songsArray[i] + "\\" + ListOfSongData[i].dificulty[j] + ".json");
+                Dificulty songDatadificultyRecord = JsonUtility.FromJson<Dificulty>(parseThis3);
                 dificultadesDeLaCancion.Add(songDatadificultyRecord);
 
             }

@@ -34,9 +34,15 @@ public class ButonConrols : MonoBehaviour
 
         if (Input.GetAxis(axisCircle1) > 0)
         {
+
             if (!butonCircle1Pressed)
             {
                 butonCircle1Pressed = true;
+                if (!butonCircle1PressedEnd)
+                {
+                    butonCircle1PressedEnd = true;
+                    butonCircle1Pressed = false;
+                }
             }
         }
         else
@@ -44,6 +50,7 @@ public class ButonConrols : MonoBehaviour
             if (butonCircle1Pressed)
             {
                 butonCircle1Pressed = false;
+                butonCircle1PressedEnd = false;
             }
         }
 
