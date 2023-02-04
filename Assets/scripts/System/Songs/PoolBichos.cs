@@ -45,12 +45,12 @@ public class PoolBichos : MonoBehaviour
 
     public void destoryBicho(int index, int sample)
     {
-        Debug.LogWarning("destroy");
+        //Debug.LogWarning("destroy");
         var tuple = (index, sample);
         bichos.TryGetValue(tuple, out GameObject bicho);
         if (bicho != null)
         {
-            Debug.LogWarning("destuirdo");
+            //Debug.LogWarning("destuirdo");
             bichos.Remove(tuple);
             Destroy(bicho);
         }

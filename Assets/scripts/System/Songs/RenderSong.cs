@@ -149,24 +149,24 @@ public class RenderSong : MonoBehaviour
         }
         if (difference <= samplePerfect)
         {
-            Debug.Log("Perfect");
+            //Debug.Log("Perfect");
             //llamar perfect
             return true;
         }
         if (difference <= sampleGood)
         {
-            Debug.Log("Good");
+            //Debug.Log("Good");
             //llamar good
             return true;
         }
         if (difference <= sampleOk)
         {
-            Debug.Log("OK");
+            //Debug.Log("OK");
             //llamar ok
             return true;
         }
         //llamar bad
-        Debug.Log("Bad");
+        //Debug.Log("Bad");
         return true;
     }
 }

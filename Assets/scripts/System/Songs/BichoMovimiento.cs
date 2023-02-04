@@ -78,7 +78,7 @@ public class BichoMovimiento : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Miss");
+                    //Debug.Log("Miss");
                     Destroy(this.gameObject);
                 }
             

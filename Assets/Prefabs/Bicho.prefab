@@ -136,8 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sampleRateToHit: 176400
   coordenadasInicio: {x: 26.7, y: -1.72, z: 7.78}
-  coordenadasHit: {x: -15, y: 0, z: 0}
-  coordenadasFinal: {x: -15, y: 0, z: 0}
+  coordenadasHit: {x: -7.65, y: 0, z: 0}
+  coordenadasFinal: {x: -25.825, y: 0, z: 0}
   coordenadasActuales: {x: 0, y: 0, z: 0}
   spawned: 0
   enUso: 0
