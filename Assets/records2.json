@@ -1,0 +1,1429 @@
+{
+    "notas": [
+        {
+            "numCircle": 3,
+            "sample": 112895
+        },
+        {
+            "numCircle": 2,
+            "sample": 167462
+        },
+        {
+            "numCircle": 4,
+            "sample": 220147
+        },
+        {
+            "numCircle": 1,
+            "sample": 249311
+        },
+        {
+            "numCircle": 3,
+            "sample": 274713
+        },
+        {
+            "numCircle": 2,
+            "sample": 300115
+        },
+        {
+            "numCircle": 4,
+            "sample": 326457
+        },
+        {
+            "numCircle": 1,
+            "sample": 380083
+        },
+        {
+            "numCircle": 3,
+            "sample": 435590
+        },
+        {
+            "numCircle": 2,
+            "sample": 458169
+        },
+        {
+            "numCircle": 4,
+            "sample": 485452
+        },
+        {
+            "numCircle": 3,
+            "sample": 512735
+        },
+        {
+            "numCircle": 4,
+            "sample": 536255
+        },
+        {
+            "numCircle": 1,
+            "sample": 563539
+        },
+        {
+            "numCircle": 3,
+            "sample": 589881
+        },
+        {
+            "numCircle": 2,
+            "sample": 620927
+        },
+        {
+            "numCircle": 4,
+            "sample": 645388
+        },
+        {
+            "numCircle": 4,
+            "sample": 671731
+        },
+        {
+            "numCircle": 3,
+            "sample": 696191
+        },
+        {
+            "numCircle": 2,
+            "sample": 723475
+        },
+        {
+            "numCircle": 1,
+            "sample": 749817
+        },
+        {
+            "numCircle": 2,
+            "sample": 776159
+        },
+        {
+            "numCircle": 1,
+            "sample": 802502
+        },
+        {
+            "numCircle": 2,
+            "sample": 831667
+        },
+        {
+            "numCircle": 4,
+            "sample": 855187
+        },
+        {
+            "numCircle": 3,
+            "sample": 882470
+        },
+        {
+            "numCircle": 2,
+            "sample": 909753
+        },
+        {
+            "numCircle": 3,
+            "sample": 936095
+        },
+        {
+            "numCircle": 1,
+            "sample": 961497
+        },
+        {
+            "numCircle": 3,
+            "sample": 987839
+        },
+        {
+            "numCircle": 2,
+            "sample": 1014182
+        },
+        {
+            "numCircle": 4,
+            "sample": 1041465
+        },
+        {
+            "numCircle": 1,
+            "sample": 1067807
+        },
+        {
+            "numCircle": 2,
+            "sample": 1094150
+        },
+        {
+            "numCircle": 1,
+            "sample": 1122374
+        },
+        {
+            "numCircle": 1,
+            "sample": 1147775
+        },
+        {
+            "numCircle": 1,
+            "sample": 1173177
+        },
+        {
+            "numCircle": 4,
+            "sample": 1199519
+        },
+        {
+            "numCircle": 4,
+            "sample": 1227743
+        },
+        {
+            "numCircle": 2,
+            "sample": 1254086
+        },
+        {
+            "numCircle": 2,
+            "sample": 1280428
+        },
+        {
+            "numCircle": 4,
+            "sample": 1306771
+        },
+        {
+            "numCircle": 3,
+            "sample": 1335935
+        },
+        {
+            "numCircle": 1,
+            "sample": 1359455
+        },
+        {
+            "numCircle": 3,
+            "sample": 1359455
+        },
+        {
+            "numCircle": 2,
+            "sample": 1386739
+        },
+        {
+            "numCircle": 4,
+            "sample": 1414963
+        },
+        {
+            "numCircle": 3,
+            "sample": 1415903
+        },
+        {
+            "numCircle": 2,
+            "sample": 1441305
+        },
+        {
+            "numCircle": 1,
+            "sample": 1462943
+        },
+        {
+            "numCircle": 2,
+            "sample": 1462943
+        },
+        {
+            "numCircle": 3,
+            "sample": 1493049
+        },
+        {
+            "numCircle": 2,
+            "sample": 1517510
+        },
+        {
+            "numCircle": 4,
+            "sample": 1517510
+        },
+        {
+            "numCircle": 3,
+            "sample": 1545734
+        },
+        {
+            "numCircle": 1,
+            "sample": 1570195
+        },
+        {
+            "numCircle": 3,
+            "sample": 1571135
+        },
+        {
+            "numCircle": 2,
+            "sample": 1596537
+        },
+        {
+            "numCircle": 1,
+            "sample": 1620998
+        },
+        {
+            "numCircle": 2,
+            "sample": 1620998
+        },
+        {
+            "numCircle": 3,
+            "sample": 1650163
+        },
+        {
+            "numCircle": 4,
+            "sample": 1675564
+        },
+        {
+            "numCircle": 3,
+            "sample": 1676505
+        },
+        {
+            "numCircle": 4,
+            "sample": 1702847
+        },
+        {
+            "numCircle": 2,
+            "sample": 1730131
+        },
+        {
+            "numCircle": 3,
+            "sample": 1756473
+        },
+        {
+            "numCircle": 1,
+            "sample": 1783756
+        },
+        {
+            "numCircle": 3,
+            "sample": 1810099
+        },
+        {
+            "numCircle": 4,
+            "sample": 1835500
+        },
+        {
+            "numCircle": 2,
+            "sample": 1861843
+        },
+        {
+            "numCircle": 1,
+            "sample": 1888185
+        },
+        {
+            "numCircle": 3,
+            "sample": 1919231
+        },
+        {
+            "numCircle": 2,
+            "sample": 1940870
+        },
+        {
+            "numCircle": 4,
+            "sample": 1968153
+        },
+        {
+            "numCircle": 1,
+            "sample": 1994495
+        },
+        {
+            "numCircle": 3,
+            "sample": 2021779
+        },
+        {
+            "numCircle": 2,
+            "sample": 2049062
+        },
+        {
+            "numCircle": 4,
+            "sample": 2074463
+        },
+        {
+            "numCircle": 1,
+            "sample": 2100806
+        },
+        {
+            "numCircle": 3,
+            "sample": 2126207
+        },
+        {
+            "numCircle": 2,
+            "sample": 2127148
+        },
+        {
+            "numCircle": 4,
+            "sample": 2151609
+        },
+        {
+            "numCircle": 1,
+            "sample": 2152550
+        },
+        {
+            "numCircle": 3,
+            "sample": 2179833
+        },
+        {
+            "numCircle": 2,
+            "sample": 2179833
+        },
+        {
+            "numCircle": 2,
+            "sample": 2206175
+        },
+        {
+            "numCircle": 1,
+            "sample": 2206175
+        },
+        {
+            "numCircle": 3,
+            "sample": 2233459
+        },
+        {
+            "numCircle": 4,
+            "sample": 2233459
+        },
+        {
+            "numCircle": 3,
+            "sample": 2259801
+        },
+        {
+            "numCircle": 2,
+            "sample": 2260742
+        },
+        {
+            "numCircle": 2,
+            "sample": 2284262
+        },
+        {
+            "numCircle": 1,
+            "sample": 2285203
+        },
+        {
+            "numCircle": 4,
+            "sample": 2311545
+        },
+        {
+            "numCircle": 3,
+            "sample": 2312486
+        },
+        {
+            "numCircle": 3,
+            "sample": 2338828
+        },
+        {
+            "numCircle": 2,
+            "sample": 2338828
+        },
+        {
+            "numCircle": 1,
+            "sample": 2365171
+        },
+        {
+            "numCircle": 4,
+            "sample": 2366111
+        },
+        {
+            "numCircle": 3,
+            "sample": 2390572
+        },
+        {
+            "numCircle": 2,
+            "sample": 2419737
+        },
+        {
+            "numCircle": 4,
+            "sample": 2447020
+        },
+        {
+            "numCircle": 1,
+            "sample": 2526047
+        },
+        {
+            "numCircle": 2,
+            "sample": 2551449
+        },
+        {
+            "numCircle": 3,
+            "sample": 2575910
+        },
+        {
+            "numCircle": 2,
+            "sample": 2602252
+        },
+        {
+            "numCircle": 4,
+            "sample": 2602252
+        },
+        {
+            "numCircle": 1,
+            "sample": 2627654
+        },
+        {
+            "numCircle": 3,
+            "sample": 2652115
+        },
+        {
+            "numCircle": 2,
+            "sample": 2670931
+        },
+        {
+            "numCircle": 4,
+            "sample": 2682220
+        },
+        {
+            "numCircle": 3,
+            "sample": 2701977
+        },
+        {
+            "numCircle": 1,
+            "sample": 2710444
+        },
+        {
+            "numCircle": 2,
+            "sample": 2733964
+        },
+        {
+            "numCircle": 3,
+            "sample": 2760307
+        },
+        {
+            "numCircle": 4,
+            "sample": 2784767
+        },
+        {
+            "numCircle": 1,
+            "sample": 2784767
+        },
+        {
+            "numCircle": 2,
+            "sample": 2812991
+        },
+        {
+            "numCircle": 3,
+            "sample": 2812991
+        },
+        {
+            "numCircle": 4,
+            "sample": 2837452
+        },
+        {
+            "numCircle": 3,
+            "sample": 2838393
+        },
+        {
+            "numCircle": 4,
+            "sample": 2866617
+        },
+        {
+            "numCircle": 1,
+            "sample": 2867558
+        },
+        {
+            "numCircle": 3,
+            "sample": 2893900
+        },
+        {
+            "numCircle": 2,
+            "sample": 2905190
+        },
+        {
+            "numCircle": 1,
+            "sample": 2918361
+        },
+        {
+            "numCircle": 2,
+            "sample": 2928710
+        },
+        {
+            "numCircle": 3,
+            "sample": 2943763
+        },
+        {
+            "numCircle": 4,
+            "sample": 2958815
+        },
+        {
+            "numCircle": 3,
+            "sample": 2972927
+        },
+        {
+            "numCircle": 2,
+            "sample": 3000211
+        },
+        {
+            "numCircle": 1,
+            "sample": 3027494
+        },
+        {
+            "numCircle": 4,
+            "sample": 3052895
+        },
+        {
+            "numCircle": 1,
+            "sample": 3075475
+        },
+        {
+            "numCircle": 2,
+            "sample": 3083942
+        },
+        {
+            "numCircle": 3,
+            "sample": 3098054
+        },
+        {
+            "numCircle": 4,
+            "sample": 3107462
+        },
+        {
+            "numCircle": 3,
+            "sample": 3125337
+        },
+        {
+            "numCircle": 2,
+            "sample": 3132863
+        },
+        {
+            "numCircle": 1,
+            "sample": 3157324
+        },
+        {
+            "numCircle": 4,
+            "sample": 3183667
+        },
+        {
+            "numCircle": 3,
+            "sample": 3210950
+        },
+        {
+            "numCircle": 4,
+            "sample": 3239174
+        },
+        {
+            "numCircle": 3,
+            "sample": 3266457
+        },
+        {
+            "numCircle": 1,
+            "sample": 3291859
+        },
+        {
+            "numCircle": 2,
+            "sample": 3291859
+        },
+        {
+            "numCircle": 3,
+            "sample": 3292799
+        },
+        {
+            "numCircle": 4,
+            "sample": 3292799
+        },
+        {
+            "numCircle": 2,
+            "sample": 3317260
+        },
+        {
+            "numCircle": 3,
+            "sample": 3344543
+        },
+        {
+            "numCircle": 4,
+            "sample": 3369945
+        },
+        {
+            "numCircle": 1,
+            "sample": 3394406
+        },
+        {
+            "numCircle": 2,
+            "sample": 3402873
+        },
+        {
+            "numCircle": 3,
+            "sample": 3423571
+        },
+        {
+            "numCircle": 4,
+            "sample": 3450854
+        },
+        {
+            "numCircle": 1,
+            "sample": 3475315
+        },
+        {
+            "numCircle": 4,
+            "sample": 3476255
+        },
+        {
+            "numCircle": 2,
+            "sample": 3527059
+        },
+        {
+            "numCircle": 3,
+            "sample": 3581625
+        },
+        {
+            "numCircle": 1,
+            "sample": 3607027
+        },
+        {
+            "numCircle": 2,
+            "sample": 3633369
+        },
+        {
+            "numCircle": 3,
+            "sample": 3660652
+        },
+        {
+            "numCircle": 4,
+            "sample": 3687935
+        },
+        {
+            "numCircle": 4,
+            "sample": 3710515
+        },
+        {
+            "numCircle": 3,
+            "sample": 3739679
+        },
+        {
+            "numCircle": 3,
+            "sample": 3766963
+        },
+        {
+            "numCircle": 4,
+            "sample": 3796127
+        },
+        {
+            "numCircle": 2,
+            "sample": 3819647
+        },
+        {
+            "numCircle": 3,
+            "sample": 3845049
+        },
+        {
+            "numCircle": 2,
+            "sample": 3873273
+        },
+        {
+            "numCircle": 3,
+            "sample": 3899615
+        },
+        {
+            "numCircle": 1,
+            "sample": 3923135
+        },
+        {
+            "numCircle": 4,
+            "sample": 3923135
+        },
+        {
+            "numCircle": 3,
+            "sample": 3949478
+        },
+        {
+            "numCircle": 2,
+            "sample": 3987110
+        },
+        {
+            "numCircle": 4,
+            "sample": 4004044
+        },
+        {
+            "numCircle": 1,
+            "sample": 4004044
+        },
+        {
+            "numCircle": 3,
+            "sample": 4030387
+        },
+        {
+            "numCircle": 2,
+            "sample": 4053907
+        },
+        {
+            "numCircle": 4,
+            "sample": 4082131
+        },
+        {
+            "numCircle": 3,
+            "sample": 4110355
+        },
+        {
+            "numCircle": 4,
+            "sample": 4137638
+        },
+        {
+            "numCircle": 3,
+            "sample": 4138579
+        },
+        {
+            "numCircle": 2,
+            "sample": 4163980
+        },
+        {
+            "numCircle": 1,
+            "sample": 4189382
+        },
+        {
+            "numCircle": 2,
+            "sample": 4215724
+        },
+        {
+            "numCircle": 1,
+            "sample": 4243007
+        },
+        {
+            "numCircle": 2,
+            "sample": 4243007
+        },
+        {
+            "numCircle": 3,
+            "sample": 4268409
+        },
+        {
+            "numCircle": 3,
+            "sample": 4283462
+        },
+        {
+            "numCircle": 3,
+            "sample": 4297574
+        },
+        {
+            "numCircle": 3,
+            "sample": 4309804
+        },
+        {
+            "numCircle": 2,
+            "sample": 4321094
+        },
+        {
+            "numCircle": 2,
+            "sample": 4337087
+        },
+        {
+            "numCircle": 2,
+            "sample": 4350259
+        },
+        {
+            "numCircle": 2,
+            "sample": 4364371
+        },
+        {
+            "numCircle": 1,
+            "sample": 4375660
+        },
+        {
+            "numCircle": 1,
+            "sample": 4388831
+        },
+        {
+            "numCircle": 1,
+            "sample": 4402943
+        },
+        {
+            "numCircle": 1,
+            "sample": 4416115
+        },
+        {
+            "numCircle": 4,
+            "sample": 4430227
+        },
+        {
+            "numCircle": 4,
+            "sample": 4441516
+        },
+        {
+            "numCircle": 4,
+            "sample": 4455628
+        },
+        {
+            "numCircle": 4,
+            "sample": 4467859
+        },
+        {
+            "numCircle": 2,
+            "sample": 4481030
+        },
+        {
+            "numCircle": 2,
+            "sample": 4495142
+        },
+        {
+            "numCircle": 2,
+            "sample": 4509254
+        },
+        {
+            "numCircle": 2,
+            "sample": 4523366
+        },
+        {
+            "numCircle": 3,
+            "sample": 4535596
+        },
+        {
+            "numCircle": 2,
+            "sample": 4536537
+        },
+        {
+            "numCircle": 3,
+            "sample": 4547827
+        },
+        {
+            "numCircle": 2,
+            "sample": 4548767
+        },
+        {
+            "numCircle": 3,
+            "sample": 4560998
+        },
+        {
+            "numCircle": 2,
+            "sample": 4562879
+        },
+        {
+            "numCircle": 3,
+            "sample": 4573228
+        },
+        {
+            "numCircle": 2,
+            "sample": 4574169
+        },
+        {
+            "numCircle": 4,
+            "sample": 4587340
+        },
+        {
+            "numCircle": 4,
+            "sample": 4599571
+        },
+        {
+            "numCircle": 4,
+            "sample": 4613683
+        },
+        {
+            "numCircle": 4,
+            "sample": 4625913
+        },
+        {
+            "numCircle": 1,
+            "sample": 4640025
+        },
+        {
+            "numCircle": 1,
+            "sample": 4652255
+        },
+        {
+            "numCircle": 1,
+            "sample": 4666367
+        },
+        {
+            "numCircle": 1,
+            "sample": 4677657
+        },
+        {
+            "numCircle": 4,
+            "sample": 4691769
+        },
+        {
+            "numCircle": 4,
+            "sample": 4705881
+        },
+        {
+            "numCircle": 4,
+            "sample": 4719052
+        },
+        {
+            "numCircle": 4,
+            "sample": 4733164
+        },
+        {
+            "numCircle": 2,
+            "sample": 4745395
+        },
+        {
+            "numCircle": 2,
+            "sample": 4759507
+        },
+        {
+            "numCircle": 2,
+            "sample": 4773619
+        },
+        {
+            "numCircle": 2,
+            "sample": 4785849
+        },
+        {
+            "numCircle": 3,
+            "sample": 4799961
+        },
+        {
+            "numCircle": 3,
+            "sample": 4811251
+        },
+        {
+            "numCircle": 3,
+            "sample": 4826303
+        },
+        {
+            "numCircle": 3,
+            "sample": 4836652
+        },
+        {
+            "numCircle": 1,
+            "sample": 4851705
+        },
+        {
+            "numCircle": 4,
+            "sample": 4857350
+        },
+        {
+            "numCircle": 4,
+            "sample": 4877107
+        },
+        {
+            "numCircle": 1,
+            "sample": 4892159
+        },
+        {
+            "numCircle": 4,
+            "sample": 4905331
+        },
+        {
+            "numCircle": 1,
+            "sample": 4918502
+        },
+        {
+            "numCircle": 4,
+            "sample": 4931673
+        },
+        {
+            "numCircle": 1,
+            "sample": 4944844
+        },
+        {
+            "numCircle": 4,
+            "sample": 4956134
+        },
+        {
+            "numCircle": 1,
+            "sample": 4971187
+        },
+        {
+            "numCircle": 3,
+            "sample": 4986239
+        },
+        {
+            "numCircle": 2,
+            "sample": 4989062
+        },
+        {
+            "numCircle": 2,
+            "sample": 4994707
+        },
+        {
+            "numCircle": 3,
+            "sample": 5063385
+        },
+        {
+            "numCircle": 2,
+            "sample": 5063385
+        },
+        {
+            "numCircle": 1,
+            "sample": 5094431
+        },
+        {
+            "numCircle": 2,
+            "sample": 5094431
+        },
+        {
+            "numCircle": 3,
+            "sample": 5116070
+        },
+        {
+            "numCircle": 1,
+            "sample": 5143353
+        },
+        {
+            "numCircle": 4,
+            "sample": 5167814
+        },
+        {
+            "numCircle": 1,
+            "sample": 5193215
+        },
+        {
+            "numCircle": 2,
+            "sample": 5203564
+        },
+        {
+            "numCircle": 3,
+            "sample": 5220499
+        },
+        {
+            "numCircle": 4,
+            "sample": 5247782
+        },
+        {
+            "numCircle": 1,
+            "sample": 5273183
+        },
+        {
+            "numCircle": 3,
+            "sample": 5300467
+        },
+        {
+            "numCircle": 2,
+            "sample": 5327750
+        },
+        {
+            "numCircle": 4,
+            "sample": 5353151
+        },
+        {
+            "numCircle": 1,
+            "sample": 5378553
+        },
+        {
+            "numCircle": 4,
+            "sample": 5408659
+        },
+        {
+            "numCircle": 1,
+            "sample": 5410540
+        },
+        {
+            "numCircle": 3,
+            "sample": 5433119
+        },
+        {
+            "numCircle": 2,
+            "sample": 5459462
+        },
+        {
+            "numCircle": 3,
+            "sample": 5485804
+        },
+        {
+            "numCircle": 1,
+            "sample": 5513087
+        },
+        {
+            "numCircle": 2,
+            "sample": 5513087
+        },
+        {
+            "numCircle": 3,
+            "sample": 5513087
+        },
+        {
+            "numCircle": 4,
+            "sample": 5514028
+        },
+        {
+            "numCircle": 2,
+            "sample": 5539430
+        },
+        {
+            "numCircle": 3,
+            "sample": 5566713
+        },
+        {
+            "numCircle": 2,
+            "sample": 5592115
+        },
+        {
+            "numCircle": 1,
+            "sample": 5615635
+        },
+        {
+            "numCircle": 3,
+            "sample": 5637273
+        },
+        {
+            "numCircle": 2,
+            "sample": 5644799
+        },
+        {
+            "numCircle": 4,
+            "sample": 5662675
+        },
+        {
+            "numCircle": 1,
+            "sample": 5673023
+        },
+        {
+            "numCircle": 2,
+            "sample": 5697484
+        },
+        {
+            "numCircle": 3,
+            "sample": 5707833
+        },
+        {
+            "numCircle": 2,
+            "sample": 5722886
+        },
+        {
+            "numCircle": 1,
+            "sample": 5743583
+        },
+        {
+            "numCircle": 2,
+            "sample": 5751110
+        },
+        {
+            "numCircle": 3,
+            "sample": 5768044
+        },
+        {
+            "numCircle": 4,
+            "sample": 5779334
+        },
+        {
+            "numCircle": 3,
+            "sample": 5792505
+        },
+        {
+            "numCircle": 2,
+            "sample": 5803795
+        },
+        {
+            "numCircle": 1,
+            "sample": 5831078
+        },
+        {
+            "numCircle": 2,
+            "sample": 5853657
+        },
+        {
+            "numCircle": 3,
+            "sample": 5862124
+        },
+        {
+            "numCircle": 3,
+            "sample": 5880940
+        },
+        {
+            "numCircle": 3,
+            "sample": 5886585
+        },
+        {
+            "numCircle": 2,
+            "sample": 5908223
+        },
+        {
+            "numCircle": 4,
+            "sample": 5937388
+        },
+        {
+            "numCircle": 1,
+            "sample": 5938329
+        },
+        {
+            "numCircle": 2,
+            "sample": 5962790
+        },
+        {
+            "numCircle": 3,
+            "sample": 5962790
+        },
+        {
+            "numCircle": 1,
+            "sample": 5989132
+        },
+        {
+            "numCircle": 1,
+            "sample": 6001363
+        },
+        {
+            "numCircle": 1,
+            "sample": 6015475
+        },
+        {
+            "numCircle": 2,
+            "sample": 6030527
+        },
+        {
+            "numCircle": 3,
+            "sample": 6044639
+        },
+        {
+            "numCircle": 2,
+            "sample": 6068159
+        },
+        {
+            "numCircle": 3,
+            "sample": 6080390
+        },
+        {
+            "numCircle": 4,
+            "sample": 6094502
+        },
+        {
+            "numCircle": 3,
+            "sample": 6107673
+        },
+        {
+            "numCircle": 2,
+            "sample": 6122726
+        },
+        {
+            "numCircle": 1,
+            "sample": 6147187
+        },
+        {
+            "numCircle": 2,
+            "sample": 6172588
+        },
+        {
+            "numCircle": 3,
+            "sample": 6199871
+        },
+        {
+            "numCircle": 4,
+            "sample": 6213983
+        },
+        {
+            "numCircle": 3,
+            "sample": 6227155
+        },
+        {
+            "numCircle": 2,
+            "sample": 6238444
+        },
+        {
+            "numCircle": 1,
+            "sample": 6253497
+        },
+        {
+            "numCircle": 2,
+            "sample": 6264787
+        },
+        {
+            "numCircle": 3,
+            "sample": 6278899
+        },
+        {
+            "numCircle": 2,
+            "sample": 6285484
+        },
+        {
+            "numCircle": 3,
+            "sample": 6299596
+        },
+        {
+            "numCircle": 2,
+            "sample": 6306182
+        },
+        {
+            "numCircle": 4,
+            "sample": 6326879
+        },
+        {
+            "numCircle": 4,
+            "sample": 6334406
+        },
+        {
+            "numCircle": 3,
+            "sample": 6346636
+        },
+        {
+            "numCircle": 2,
+            "sample": 6356985
+        },
+        {
+            "numCircle": 1,
+            "sample": 6365452
+        },
+        {
+            "numCircle": 2,
+            "sample": 6383327
+        },
+        {
+            "numCircle": 3,
+            "sample": 6400262
+        },
+        {
+            "numCircle": 4,
+            "sample": 6414374
+        },
+        {
+            "numCircle": 4,
+            "sample": 6426604
+        },
+        {
+            "numCircle": 3,
+            "sample": 6437894
+        },
+        {
+            "numCircle": 2,
+            "sample": 6462355
+        },
+        {
+            "numCircle": 1,
+            "sample": 6475526
+        },
+        {
+            "numCircle": 2,
+            "sample": 6482111
+        },
+        {
+            "numCircle": 2,
+            "sample": 6491519
+        },
+        {
+            "numCircle": 3,
+            "sample": 6512217
+        },
+        {
+            "numCircle": 2,
+            "sample": 6522566
+        },
+        {
+            "numCircle": 3,
+            "sample": 6533855
+        },
+        {
+            "numCircle": 4,
+            "sample": 6547027
+        },
+        {
+            "numCircle": 3,
+            "sample": 6569606
+        },
+        {
+            "numCircle": 2,
+            "sample": 6592185
+        },
+        {
+            "numCircle": 1,
+            "sample": 6600652
+        },
+        {
+            "numCircle": 2,
+            "sample": 6611001
+        },
+        {
+            "numCircle": 1,
+            "sample": 6623231
+        },
+        {
+            "numCircle": 2,
+            "sample": 6635462
+        },
+        {
+            "numCircle": 3,
+            "sample": 6649574
+        },
+        {
+            "numCircle": 4,
+            "sample": 6680620
+        },
+        {
+            "numCircle": 3,
+            "sample": 6698495
+        },
+        {
+            "numCircle": 3,
+            "sample": 6706022
+        },
+        {
+            "numCircle": 2,
+            "sample": 6726719
+        },
+        {
+            "numCircle": 1,
+            "sample": 6741772
+        },
+        {
+            "numCircle": 2,
+            "sample": 6754943
+        },
+        {
+            "numCircle": 2,
+            "sample": 6784108
+        },
+        {
+            "numCircle": 3,
+            "sample": 6784108
+        }
+    ],
+    "level": 1
+}

@@ -75,9 +75,9 @@ public class MusicTimer : MonoBehaviour
 
     public void mostrar()
     {
-        textoPruebaTime.text = Mathf.Floor(Time / 60).ToString("00") + ":" + Mathf.Floor(Time % 60).ToString("00");
-        textoPruebaSamples.text = Mathf.Floor(Time).ToString();
-        textoPruebaSampleRate.text = $"delta sample: {DeltaSample}. delta tiempo: {DeltaTiempo}";
+        //textoPruebaTime.text = Mathf.Floor(Time / 60).ToString("00") + ":" + Mathf.Floor(Time % 60).ToString("00");
+        //textoPruebaSamples.text = Mathf.Floor(Time).ToString();
+        //textoPruebaSampleRate.text = $"delta sample: {DeltaSample}. delta tiempo: {DeltaTiempo}";
     }
 
     public void CalcularDeltaTiempo()

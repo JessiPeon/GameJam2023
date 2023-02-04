@@ -44,6 +44,22 @@ public class SaveTime : MonoBehaviour
         string json = JsonUtility.ToJson(record, true);
         File.WriteAllText(Application.dataPath + "/records.json", json);
     }
+    public void SaveToJson2()
+    {
+        Cancion record = new Cancion();
+        record.level = 1;
+        record.notas = new List<Nota>();
+        for (int i = 0; i < sample.Count; i++)
+        {
+            Nota nota = new Nota();
+            nota.numCircle = numCircle[i];
+            nota.sample = (int)sample[i];
+            record.notas.Add(nota);
+        }
+
+        string json = JsonUtility.ToJson(record, true);
+        File.WriteAllText(Application.dataPath + "/records2.json", json);
+    }
     public void LoadToJson()
     {
         string json = File.ReadAllText(Application.dataPath + "/records.json");
@@ -52,7 +68,24 @@ public class SaveTime : MonoBehaviour
         numCircle = record.numCircle;
         sample =record.sample;
         level = record.level;
-
     }
 
+    
+}
+
+[System.Serializable]
+public class Nota
+{
+    public int numCircle;
+    public int sample;
+
+    
+}
+
+
+[System.Serializable]
+public class Cancion
+{
+    public List<Nota> notas;
+    public int level;
 }
