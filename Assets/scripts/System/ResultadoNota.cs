@@ -69,9 +69,9 @@ public class ResultadoNota : MonoBehaviour
     public void SacaPerfect()
     {
         vida += 200;
-        if(vida > 1000)
+        if(vida > vidaMax)
         {
-            vida = 1000;
+            vida = vidaMax;
         }
         corazon.fillAmount = vida/ vidaMax;
         puntajeNuevo += 200;
@@ -80,9 +80,9 @@ public class ResultadoNota : MonoBehaviour
     public void SacaGood()
     {
         vida += 100;
-        if (vida > 1000)
+        if (vida > vidaMax)
         {
-            vida = 1000;
+            vida = vidaMax;
         }
         corazon.fillAmount = vida/ vidaMax;
         puntajeNuevo += 100;
@@ -91,9 +91,9 @@ public class ResultadoNota : MonoBehaviour
     public void SacaOK()
     {
         vida += 50;
-        if (vida > 1000)
+        if (vida > vidaMax)
         {
-            vida = 1000;
+            vida = vidaMax;
         }
         corazon.fillAmount = vida/ vidaMax;
         puntajeNuevo += 50;
@@ -101,19 +101,19 @@ public class ResultadoNota : MonoBehaviour
 
     public void SacaBad()
     {
-        vida -= 50;
+        vida -= 150;
         if (vida < 0)
         {
             vida = 0;
         }
         corazon.fillAmount = vida/ vidaMax;
-        if((puntajeNuevo-50)<=0)
+        if((puntajeNuevo-150)<=0)
         {
             puntajeNuevo = 0;
         }
         else
         {
-            puntajeNuevo -= 50;
+            puntajeNuevo -= 150;
         }
         
         
@@ -121,19 +121,19 @@ public class ResultadoNota : MonoBehaviour
 
     public void SacaMiss()
     {
-        vida -= 100;
+        vida -= 300;
         if (vida < 0)
         {
             vida = 0;
         }
         corazon.fillAmount = vida/ vidaMax;
-        if ((puntajeNuevo - 100) <= 0)
+        if ((puntajeNuevo - 300) <= 0)
         {
             puntajeNuevo = 0;
         }
         else
         {
-            puntajeNuevo -= 100;
+            puntajeNuevo -= 300 ;
         }
 
     }

@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableObject: {fileID: 0}
+  boton: {fileID: 3650517157049300935}
 --- !u!1 &6252281727195204248
 GameObject:
   m_ObjectHideFlags: 0
