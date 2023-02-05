@@ -15,6 +15,8 @@ public class RenderSong : MonoBehaviour
     public List<int[]> listaCirclesCheck;
     public List<int> indices;
 
+    private ResultadoNota resultadoScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +92,8 @@ public class RenderSong : MonoBehaviour
             0,
             0,
         };
+
+        resultadoScript = gameObject.GetComponent<ResultadoNota>();
     }
 
     // Update is called once per frame
@@ -191,7 +195,7 @@ public class RenderSong : MonoBehaviour
         {
             //Debug.Log("Perfect");
             Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 1);
-
+            resultadoScript.SacaPerfect();
             //llamar perfect
             return true;
         }
@@ -199,7 +203,7 @@ public class RenderSong : MonoBehaviour
         {
             //Debug.Log("Good");
             Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 2);
-
+            resultadoScript.SacaGood();
             //llamar good
             return true;
         }
@@ -208,11 +212,12 @@ public class RenderSong : MonoBehaviour
             //Debug.Log("OK");
             //llamar ok
             Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 3);
-
+            resultadoScript.SacaOK();
             return true;
         }
         //llamar bad
         Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 4);
+        resultadoScript.SacaBad();
         //Debug.Log("Bad");
         return true;
     }

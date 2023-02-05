@@ -25,12 +25,14 @@ public class BichoMovimiento : MonoBehaviour
     public float samplesMoviodos;
 
     private Bicho bicho;
+    private ResultadoNota resultadoScript;
 
     private void Awake()
     {
         bicho = this.gameObject.GetComponent<Bicho>();
         bicho.DejarLibre();
         coordenadasInicio = Sistema.data.poolBichos.posicionCircle[bicho.circle].transform.position;
+        resultadoScript = gameObject.GetComponent<ResultadoNota>();
         //Debug.Log("Sample Rate on spawn " + Sistema.data.musicTimer.Samples);
         //Debug.Log("yo deberia haber spawneado en  " + (sampleRateToHit - Sistema.data.musicTimer.samplesToSpawn));
     }
@@ -102,11 +104,12 @@ public class BichoMovimiento : MonoBehaviour
                     else
                     {
                         Sistema.data.muestraMensajeBoton.instanciarBotonEfect(bicho.circle + 1, 5);
-
+                        resultadoScript = GameObject.Find("Sistema").GetComponent<ResultadoNota>();
+                        resultadoScript.SacaBad();
                         Sistema.data.renderSong.listaCirclesCheck[bicho.circle][indiceListaLoca] = 1;
                     }
-                    
 
+                    
                     Destroy(this.gameObject, 0.1f);
                     
                 }

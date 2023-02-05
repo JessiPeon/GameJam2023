@@ -7,14 +7,13 @@ using System;
 
 public class ResultadoNota : MonoBehaviour
 {
-    public int vida = 250;
-    public int vidaMax = 1000;
+    private float vida = 500;
+    public float vidaMax = 1000;
     public int puntajeMostrado = 0;
     public int puntajeNuevo = 0;
 
     public TextMeshProUGUI puntajeUI;
-    public Slider slider;
-    public GameObject prefabParticles;
+    public Image corazon;
 
     [SerializeField] private GameObject circle1;
     [SerializeField] private GameObject circle2;
@@ -27,8 +26,10 @@ public class ResultadoNota : MonoBehaviour
 
     private void Start()
     {
-        puntajeMostrado = puntajeNuevo;
-        Vector3 positionCircle1 = Camera.main.transform.InverseTransformPoint(circle1.transform.position);
+        puntajeMostrado = 0;
+        puntajeNuevo = puntajeMostrado;
+        corazon.fillAmount = vida/vidaMax;
+        /*Vector3 positionCircle1 = Camera.main.transform.InverseTransformPoint(circle1.transform.position);
         huesitos1 = GameObject.Instantiate(prefabParticles, positionCircle1, Quaternion.identity).GetComponent<ParticleSystem>();
 
         Vector3 positionCircle2 = Camera.main.transform.InverseTransformPoint(circle2.transform.position);
@@ -38,7 +39,7 @@ public class ResultadoNota : MonoBehaviour
         huesitos3 = GameObject.Instantiate(prefabParticles, positionCircle3, Quaternion.identity).GetComponent<ParticleSystem>();
 
         Vector3 positionCircle4 = Camera.main.transform.InverseTransformPoint(circle4.transform.position);
-        huesitos4 = GameObject.Instantiate(prefabParticles, positionCircle4, Quaternion.identity).GetComponent<ParticleSystem>();
+        huesitos4 = GameObject.Instantiate(prefabParticles, positionCircle4, Quaternion.identity).GetComponent<ParticleSystem>();*/
     }
     public void Update()
     {
@@ -55,79 +56,75 @@ public class ResultadoNota : MonoBehaviour
         }
     }
 
-    private void disparaHuesitos(int numCircle)
-    {
-        if (numCircle == 1)
-        {
-            huesitos1.Play();
-        }
-        if (numCircle == 2)
-        {
-            huesitos2.Play();
-        }
-        if (numCircle == 3)
-        {
-            huesitos3.Play();
-        }
-        if (numCircle == 4)
-        {
-            huesitos4.Play();
-        }
-    }
-
-    public void SacaPerfect(int numCircle)
+    public void SacaPerfect()
     {
         vida += 200;
         if(vida > 1000)
         {
             vida = 1000;
         }
-        slider.value = vida;
+        corazon.fillAmount = vida/ vidaMax;
         puntajeNuevo += 200;
-        disparaHuesitos(numCircle);
     }
 
-    public void SacaGood(int numCircle)
+    public void SacaGood()
     {
         vida += 100;
         if (vida > 1000)
         {
             vida = 1000;
         }
-        slider.value = vida;
+        corazon.fillAmount = vida/ vidaMax;
         puntajeNuevo += 100;
     }
 
-    public void SacaOK(int numCircle)
+    public void SacaOK()
     {
         vida += 50;
         if (vida > 1000)
         {
             vida = 1000;
         }
-        slider.value = vida;
+        corazon.fillAmount = vida/ vidaMax;
         puntajeNuevo += 50;
     }
 
-    public void SacaBad(int numCircle)
+    public void SacaBad()
     {
         vida -= 50;
         if (vida < 0)
         {
             vida = 0;
         }
-        slider.value = vida;
-        puntajeNuevo -= 50;
+        corazon.fillAmount = vida/ vidaMax;
+        if((puntajeNuevo-50)<=0)
+        {
+            puntajeNuevo = 0;
+        }
+        else
+        {
+            puntajeNuevo -= 50;
+        }
+        
+        
     }
 
-    public void SacaMiss(int numCircle)
+    public void SacaMiss()
     {
         vida -= 100;
         if (vida < 0)
         {
             vida = 0;
         }
-        slider.value = vida;
-        puntajeNuevo -= 100;
+        corazon.fillAmount = vida/ vidaMax;
+        if ((puntajeNuevo - 100) <= 0)
+        {
+            puntajeNuevo = 0;
+        }
+        else
+        {
+            puntajeNuevo -= 100;
+        }
+
     }
 }
