@@ -14,6 +14,7 @@ public class ResultadoNota : MonoBehaviour
 
     public TextMeshProUGUI puntajeUI;
     public GameObject loserUI;
+    public Button loserUIButton;
     public Image corazon;
     public AudioSource audio;
     public GameObject WinUI;
