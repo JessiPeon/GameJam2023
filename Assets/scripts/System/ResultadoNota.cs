@@ -14,6 +14,7 @@ public class ResultadoNota : MonoBehaviour
 
     public TextMeshProUGUI puntajeUI;
     public GameObject loserUI;
+    public Button loserUIButton;
     public Image corazon;
     public AudioSource audio;
 
@@ -58,6 +59,7 @@ public class ResultadoNota : MonoBehaviour
         }
         if (vida == 0) {
             loserUI.SetActive(true);
+            loserUIButton.Select();
             audio.Stop();
         }
     }
