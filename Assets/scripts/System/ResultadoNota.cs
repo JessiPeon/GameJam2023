@@ -13,7 +13,9 @@ public class ResultadoNota : MonoBehaviour
     public int puntajeNuevo = 0;
 
     public TextMeshProUGUI puntajeUI;
+    public GameObject loserUI;
     public Image corazon;
+    public AudioSource audio;
 
     [SerializeField] private GameObject circle1;
     [SerializeField] private GameObject circle2;
@@ -53,6 +55,10 @@ public class ResultadoNota : MonoBehaviour
         {
             puntajeMostrado -= 5;
             puntajeUI.text = puntajeMostrado.ToString();
+        }
+        if (vida == 0) {
+            loserUI.SetActive(true);
+            audio.Stop();
         }
     }
 

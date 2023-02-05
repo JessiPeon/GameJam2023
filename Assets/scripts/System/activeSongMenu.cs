@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class activeSongMenu : MonoBehaviour
 {
@@ -8,6 +9,6 @@ public class activeSongMenu : MonoBehaviour
 
     public void PlaySong()
     {
-        //SceneManager
+        SceneManager.LoadScene(1);
     }
 }

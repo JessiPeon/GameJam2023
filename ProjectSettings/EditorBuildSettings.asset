@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: b89012f039821ce49b295b47fcc9b5f6
+  - enabled: 1
     path: Assets/Scenes/TimerTest2.unity
     guid: 2899afc3eaf7e654486e2b94f47f3c37
   m_configObjects: {}
