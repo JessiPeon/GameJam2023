@@ -9,10 +9,12 @@ public class Bicho : MonoBehaviour
 
     public int circle;
 
+    public GameObject[] BichoGrafico;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        BichoGrafico[circle].gameObject.SetActive(true);
     }
 
     // Update is called once per frame

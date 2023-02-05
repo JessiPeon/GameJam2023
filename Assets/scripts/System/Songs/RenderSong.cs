@@ -12,6 +12,7 @@ public class RenderSong : MonoBehaviour
     public int[] circle4;
 
     public List<int[]> listaCircles;
+    public List<int[]> listaCirclesCheck;
     public List<int> indices;
 
     // Start is called before the first frame update
@@ -67,6 +68,21 @@ public class RenderSong : MonoBehaviour
             circle4,
         };
 
+        int[] circle1Check = new int[circle1.Length];
+        int[] circle2Check = new int[circle2.Length];
+        int[] circle3Check = new int[circle3.Length];
+        int[] circle4Check = new int[circle4.Length];
+
+        listaCirclesCheck = new List<int[]>
+        {
+            circle1Check,
+            circle2Check,
+            circle3Check,
+            circle4Check,
+        };
+
+
+
         indices = new List<int>
         {
             0,
@@ -108,16 +124,22 @@ public class RenderSong : MonoBehaviour
 
     public bool CheckButtonPress(int indice, int sapmleToFind)
     {
+        Debug.Log("se pidio el " + indice + " sample " + sapmleToFind);
         int? hitPlus = null;
         int? hitMinus = null;
+
+
         int i = 0;
         var circle = listaCircles[indice];
+        var circleCheck = listaCirclesCheck[indice];
+
         for (; i < circle.Length; i++)
         {
             int item = circle[i];
             if (item >= sapmleToFind)
             {
                 hitPlus = item;
+
                 break;
             }
         }
@@ -125,22 +147,40 @@ public class RenderSong : MonoBehaviour
         {
             hitMinus = circle[i - 1];
         }
-        var minusResult = CalculateHit(sapmleToFind, hitMinus);
-        if (minusResult)
+        
+        if(i != 0)
         {
-            Sistema.data.poolBichos.destoryBicho(indice, hitMinus.GetValueOrDefault());
-            return true;
+            if (listaCirclesCheck[indice][i - 1] != 1)
+            {
+
+                var minusResult = CalculateHit(sapmleToFind, hitMinus, indice);
+                if (minusResult)
+                {
+                    listaCirclesCheck[indice][i - 1] = 1;
+                    Sistema.data.poolBichos.destoryBicho(indice, hitMinus.GetValueOrDefault());
+                    return true;
+                }
+            }
         }
-        var plusResult = CalculateHit(sapmleToFind, hitPlus);
-        if (plusResult)
+        
+
+        if (listaCirclesCheck[indice][i] != 1)
         {
-            Sistema.data.poolBichos.destoryBicho(indice, hitPlus.GetValueOrDefault());
-            return true;
+            //listaCirclesCheck[indice][i] = 1;
+            var plusResult = CalculateHit(sapmleToFind, hitPlus, indice);
+            if (plusResult)
+            {
+                listaCirclesCheck[indice][i] = 1;
+                Sistema.data.poolBichos.destoryBicho(indice, hitPlus.GetValueOrDefault());
+                return true;
+            }
         }
+
+        
         return false;
     }
 
-    private bool CalculateHit(int sapmleToFind, int? hitMinus)
+    private bool CalculateHit(int sapmleToFind, int? hitMinus, int indice)
     {
         var difference = Mathf.Abs(sapmleToFind - hitMinus.GetValueOrDefault());
         if (hitMinus is null || difference > sampleBad)
@@ -150,12 +190,16 @@ public class RenderSong : MonoBehaviour
         if (difference <= samplePerfect)
         {
             //Debug.Log("Perfect");
+            Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 1);
+
             //llamar perfect
             return true;
         }
         if (difference <= sampleGood)
         {
             //Debug.Log("Good");
+            Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 2);
+
             //llamar good
             return true;
         }
@@ -163,9 +207,12 @@ public class RenderSong : MonoBehaviour
         {
             //Debug.Log("OK");
             //llamar ok
+            Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 3);
+
             return true;
         }
         //llamar bad
+        Sistema.data.muestraMensajeBoton.instanciarBotonEfect(indice + 1, 4);
         //Debug.Log("Bad");
         return true;
     }

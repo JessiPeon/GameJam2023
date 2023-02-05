@@ -52,7 +52,7 @@ public class PoolBichos : MonoBehaviour
         {
             //Debug.LogWarning("destuirdo");
             bichos.Remove(tuple);
-            Destroy(bicho);
+            Destroy(bicho,0.05f);
         }
     }
 }

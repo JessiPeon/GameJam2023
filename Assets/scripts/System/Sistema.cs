@@ -14,6 +14,7 @@ public class Sistema : MonoBehaviour
     public LoadSongData loadSongData = null;
 
     public RenderSong renderSong = null;
+    public MuestraMensajeBoton muestraMensajeBoton = null;
 
 
     // Start is called before the first frame update

@@ -29,9 +29,9 @@ public class LoadSongData : MonoBehaviour
         selectedSongData = Sistema.data.loadSongs.ListOfSongData[songNumber];
         selectedSongDificultyData = Sistema.data.loadSongs.ListOfSongDificultyData[songNumber][songDificulty];
 
-        Debug.Log("CANCION SELECCIONADA");
-        Debug.Log(JsonUtility.ToJson(selectedSongData));
-        Debug.Log(JsonUtility.ToJson(selectedSongDificultyData));
+        //Debug.Log("CANCION SELECCIONADA");
+        //Debug.Log(JsonUtility.ToJson(selectedSongData));
+        //Debug.Log(JsonUtility.ToJson(selectedSongDificultyData));
     }
 
     // Update is called once per frame

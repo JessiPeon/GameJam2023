@@ -5,7 +5,15 @@ using UnityEngine.UI;
 using System;
 
 public class ButonConrols : MonoBehaviour
-{ 
+{
+
+    public string triggerName;
+    public Animator Atack1;
+    public Animator Atack2;
+    public Animator Atack3;
+    public Animator Atack4;
+
+    [Space(30)]
     [SerializeField] private Image circle1;
     [SerializeField] private Image circle2;
     [SerializeField] private Image circle3;
@@ -35,10 +43,47 @@ public class ButonConrols : MonoBehaviour
     public float _ImputTimer3 = 0;
     public float _ImputTimer4 = 0;
 
+    [Space(30f)]
+
+    public float helpButonsTimer = 1f;
+
+    public Image Button1;
+    public Image Button2;
+    public Image Button3;
+    public Image Button4;
+
+    public float Alpha = .8f;
+    public float AlphaSpeed = 0;
+    public Color colorBotones = new Color(255, 255, 255, .8f);
+
+    private void Start()
+    {
+        Button1.color = colorBotones;
+        Button2.color = colorBotones;
+        Button3.color = colorBotones;
+        Button4.color = colorBotones;
+    }
+
     void FixedUpdate()
     {
 
-        if(_ImputTimer1 > 0)
+       
+        if (helpButonsTimer > 0) {
+            helpButonsTimer -= 1 * Time.fixedDeltaTime;
+        }
+        else
+        {
+            Alpha = Mathf.Max(Alpha-AlphaSpeed * Time.fixedDeltaTime, 0);
+
+            colorBotones = new Color(255, 255, 255, Alpha);
+            Button1.color = colorBotones;
+            Button2.color = colorBotones;
+            Button3.color = colorBotones;
+            Button4.color = colorBotones;
+            //colorBotones.a = Alpha;
+        }
+
+        if (_ImputTimer1 > 0)
         {
             _ImputTimer1 -= 1 * Time.fixedDeltaTime;
         }
@@ -52,6 +97,7 @@ public class ButonConrols : MonoBehaviour
             _ImputTimer1 = ImputTimerDuration;
             lastImputCircle1 = 1;
             Sistema.data.renderSong.CheckButtonPress(0, Mathf.CeilToInt(Sistema.data.musicTimer.Samples));
+            Atack1.SetTrigger(triggerName);
             circle1.color = Color.yellow;
 
         }
@@ -75,6 +121,7 @@ public class ButonConrols : MonoBehaviour
             _ImputTimer2 = ImputTimerDuration;
             lastImputCircle2 = 1;
             Sistema.data.renderSong.CheckButtonPress(1, Mathf.CeilToInt(Sistema.data.musicTimer.Samples));
+            Atack2.SetTrigger(triggerName);
             circle2.color = Color.blue;
 
         }
@@ -99,6 +146,7 @@ public class ButonConrols : MonoBehaviour
             _ImputTimer3 = ImputTimerDuration;
             lastImputCircle3 = 1;
             Sistema.data.renderSong.CheckButtonPress(2, Mathf.CeilToInt(Sistema.data.musicTimer.Samples));
+            Atack3.SetTrigger(triggerName);
             circle3.color = Color.red;
 
         }
@@ -123,6 +171,7 @@ public class ButonConrols : MonoBehaviour
             _ImputTimer4 = ImputTimerDuration;
             lastImputCircle4 = 1;
             Sistema.data.renderSong.CheckButtonPress(3, Mathf.CeilToInt(Sistema.data.musicTimer.Samples));
+            Atack4.SetTrigger(triggerName);
             circle4.color = Color.green;
 
         }

@@ -45,9 +45,9 @@ InputManager:
     positiveButton: z
     altNegativeButton: 
     altPositiveButton: joystick button 3
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 0
     type: 0
@@ -61,9 +61,9 @@ InputManager:
     positiveButton: x
     altNegativeButton: 
     altPositiveButton: joystick button 2
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 0
     type: 0
@@ -77,9 +77,9 @@ InputManager:
     positiveButton: c
     altNegativeButton: 
     altPositiveButton: joystick button 1
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 0
     type: 0
@@ -93,9 +93,9 @@ InputManager:
     positiveButton: v
     altNegativeButton: 
     altPositiveButton: joystick button 0
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 0
     type: 0
@@ -493,9 +493,9 @@ InputManager:
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 0
     type: 2
@@ -509,9 +509,9 @@ InputManager:
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 1
     type: 2
@@ -525,9 +525,9 @@ InputManager:
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 0
     type: 2
@@ -541,9 +541,9 @@ InputManager:
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1000
+    gravity: 1000000
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1000000
     snap: 0
     invert: 1
     type: 2

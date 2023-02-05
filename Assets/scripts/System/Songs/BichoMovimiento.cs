@@ -78,8 +78,37 @@ public class BichoMovimiento : MonoBehaviour
                 }
                 else
                 {
-                    //Debug.Log("Miss");
-                    Destroy(this.gameObject);
+                    CalcularMovimiento();
+                    MoverBicho(gameObject);
+
+                    Debug.Log("Miss" + Time.time);
+                    //bicho.circle;
+                    //sampleRateToHit
+
+                    int indiceListaLoca = 0;
+                    int[] ListaLoca = Sistema.data.renderSong.listaCirclesCheck[bicho.circle];
+                    for (int i = 0; i < ListaLoca.Length; i++)
+                    {
+                        if(Sistema.data.renderSong.listaCircles[bicho.circle][i] == sampleRateToHit)
+                        {
+                            indiceListaLoca = i; break;
+                        }
+                    }
+
+                    if(Sistema.data.renderSong.listaCirclesCheck[bicho.circle][indiceListaLoca] == 1)
+                    {
+
+                    }
+                    else
+                    {
+                        Sistema.data.muestraMensajeBoton.instanciarBotonEfect(bicho.circle + 1, 5);
+
+                        Sistema.data.renderSong.listaCirclesCheck[bicho.circle][indiceListaLoca] = 1;
+                    }
+                    
+
+                    Destroy(this.gameObject, 0.1f);
+                    
                 }
             
             }
