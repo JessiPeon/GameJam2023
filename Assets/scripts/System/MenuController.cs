@@ -18,6 +18,7 @@ public class MenuController : MonoBehaviour
             song.GetComponent<Image>().sprite = songs[i].spriteMenuSong;
             song.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = songs[i].name;
             song.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = songs[i].difficulty.ToString();
+            song.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
         }
     }
 
