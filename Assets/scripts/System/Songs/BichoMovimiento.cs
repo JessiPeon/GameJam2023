@@ -82,9 +82,6 @@ public class BichoMovimiento : MonoBehaviour
                 {
                     CalcularMovimiento();
                     MoverBicho(gameObject);
-
-                    Debug.Log("Miss" + Time.time);
-                    //bicho.circle;
                     //sampleRateToHit
 
                     int indiceListaLoca = 0;

@@ -96,9 +96,13 @@ public class RenderSong : MonoBehaviour
         resultadoScript = gameObject.GetComponent<ResultadoNota>();
     }
 
+    private float maxSample = 0;
+    private bool winWasAchived = false;
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        var dontCheckForEnd = false;
         for (int i = 0; i < listaCircles.Count; i++)
         {
             if (listaCircles[i].Length <= indices[i])
@@ -111,7 +115,19 @@ public class RenderSong : MonoBehaviour
                 //Sistema.data.spwnservice.spawnBichoAt(i);
                 Sistema.data.poolBichos.intentarPool(i, sample);
                 indices[i]++;
+                if(maxSample <= sample)
+                {
+                    maxSample = sample;
+                }
+                dontCheckForEnd = false;
             }
+        }
+        if (!dontCheckForEnd && 88200 + maxSample <= Sistema.data.musicTimer.Samples && !winWasAchived)
+        {
+            winWasAchived = true; 
+            Debug.Log("HOLA");
+            resultadoScript.Win();
+            
         }
     }
 

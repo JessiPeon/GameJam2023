@@ -7,8 +7,8 @@ using System;
 
 public class ResultadoNota : MonoBehaviour
 {
-    private float vida = 500;
-    public float vidaMax = 1000;
+    private float vida = 500; //500
+    public float vidaMax = 1000; //1000
     public int puntajeMostrado = 0;
     public int puntajeNuevo = 0;
 
@@ -16,6 +16,8 @@ public class ResultadoNota : MonoBehaviour
     public GameObject loserUI;
     public Image corazon;
     public AudioSource audio;
+    public GameObject WinUI;
+
 
     [SerializeField] private GameObject circle1;
     [SerializeField] private GameObject circle2;
@@ -47,17 +49,18 @@ public class ResultadoNota : MonoBehaviour
     {
         if (puntajeMostrado < puntajeNuevo)
         {
-            puntajeMostrado += 5;
+            puntajeMostrado += 25;
             puntajeUI.text = puntajeMostrado.ToString();
         }
 
         if (puntajeMostrado > puntajeNuevo)
         {
-            puntajeMostrado -= 5;
+            puntajeMostrado -= 25;
             puntajeUI.text = puntajeMostrado.ToString();
         }
         if (vida == 0) {
             loserUI.SetActive(true);
+            loserUI.GetComponent<Button>().Select();
             audio.Stop();
         }
     }
@@ -132,5 +135,11 @@ public class ResultadoNota : MonoBehaviour
             puntajeNuevo -= 100;
         }
 
+    }
+
+    public void Win()
+    {
+        WinUI.SetActive(true);
+        WinUI.GetComponent<Button>().Select();
     }
 }
