@@ -773,7 +773,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b> Programadores</b>\nAgust\xEDn Parodi  | Fernando Rivero\n    Jessica
+  m_text: "<b> Programadores</b>\n    Agustinzero1 | Fernando Rivero\n     Jessica
     Pe\xF3n  |  Santiago Mendez\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

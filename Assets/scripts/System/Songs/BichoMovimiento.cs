@@ -10,7 +10,7 @@ public class BichoMovimiento : MonoBehaviour
     public float sampleRateToHit = 176400f; //4 segundos
     [Space(20f)]
     public Vector3 coordenadasInicio;
-    public Vector3 coordenadasHit;
+    public Vector3 coordenadasHit;    // origen -34.8
     public Vector3 coordenadasFinal;
     [Space(20f)]
     public Vector3 coordenadasActuales;
@@ -76,13 +76,13 @@ public class BichoMovimiento : MonoBehaviour
                     //Debug.Log("falle " + (Sistema.data.musicTimer.Samples - sampleRateToHit));
                     
                     CalcularMovimiento();
-                    MoverBicho(gameObject);
+                    //MoverBicho(gameObject);
                 }
                 else
                 {
                     CalcularMovimiento();
-                    MoverBicho(gameObject);
-                    //sampleRateToHit
+                    //MoverBicho(gameObject);
+                    ////sampleRateToHit
 
                     int indiceListaLoca = 0;
                     int[] ListaLoca = Sistema.data.renderSong.listaCirclesCheck[bicho.circle];
@@ -130,7 +130,7 @@ public class BichoMovimiento : MonoBehaviour
             gameObject.transform.position = coordenadasActuales;
 
             coordenadasFinal = new Vector3(coordenadasHit.x - (coordenadasInicio.x - coordenadasHit.x), coordenadasInicio.y, coordenadasInicio.z);
-            coordenadasHit = new Vector3(coordenadasHit.x, coordenadasInicio.y, coordenadasInicio.z);
+            coordenadasHit = new Vector3(coordenadasInicio.x - 34.8f, coordenadasInicio.y, coordenadasInicio.z);
 
             distancia = Mathf.Abs(coordenadasHit.x - coordenadasInicio.x);
 
